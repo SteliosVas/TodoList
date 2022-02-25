@@ -1,0 +1,82 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  row-gap: 1rem;
+  width: 100;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10rem;
+  background-color: red;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.textfield {
+  padding: 0.5rem;
+  border-radius: 25px;
+  border: 3px solid blue;
+  background-color: rgba(255, 255, 255, 0.35);
+  transition: linear 0.5s;
+  font-size: 1rem;
+}
+
+.textfield:active,
+.textfield:hover,
+.textfield:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.ok {
+  margin: auto;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: linear 0.25s;
+}
+
+.ok:hover {
+  background-color: yellowgreen;
+}
+
+.todo {
+  text-align: center;
+  justify-content: center;
+  width: 20%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: rgba(128, 128, 128, 0.6);
+  display: grid;
+  border-radius: 10px;
+}
+
+.todo-elements {
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: auto;
+  display: inherit;
+  border-radius: 4px;
+  position: sticky;
+}
+
+.checkbox {
+  background-color: red;
+}
+
+.text {
+  grid-column: 2;
+  font-size: 1rem;
+}
